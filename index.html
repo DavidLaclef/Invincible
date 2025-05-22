@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invincible: Faille de Sécurité - Connexion</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body id="login-page">
+  <div class="container">
+    <header>
+      <h1 class="app-title">Invincible: Faille de Sécurité</h1>
+    </header>
+    <main>
+      <div class="page-content">
+        <h2 class="page-title">Portail de Connexion GDA</h2>
+        <!-- CRÉDENTIAUX DE TEST SYSTÈME GDA -->
+        <!-- Nom d'utilisateur: omni-man -->
+        <!-- Mot de passe: terre_priorite_un -->
+        <!-- Veuillez supprimer ceci avant le déploiement en production - Cecil Stedman -->
+        <img
+          src="img/gda_cecil.jpg"
+          alt="Logo GDA"
+          class="page-image"
+          style="max-width: 400px;"
+        />
+        <p class="page-description">
+          Bienvenue, Agent. Veuillez vous identifier pour accéder aux systèmes de la Global Defense Agency.
+        </p>
+        <p class="hint">
+          Indice : Omni-Man disait toujours, "La solution la plus simple est souvent à la source du problème."
+        </p>
+
+        <form id="login-form" class="styled-form">
+          <div class="form-group">
+            <label for="username">Nom d'utilisateur</label>
+            <input type="text" id="username" name="username" placeholder="Ex: agent_grayson" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" placeholder="************" required>
+          </div>
+          <p id="error-message" class="error-message"></p>
+          <button type="submit" class="styled-button">Connexion Sécurisée</button>
+        </form>
+        <p class="small-hint">
+          Si vous êtes bloqué, n'oubliez pas que les développeurs laissent parfois des notes dans le code source (Ctrl+U ou Clic Droit > Afficher le code source / Inspecter).
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; <span id="current-year"></span> Formation Sécurité Omni-Corp. Tous droits réservés.</p>
+      <p>Inspiré par l'univers Invincible.</p>
+    </footer>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html><link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>

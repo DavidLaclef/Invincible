@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invincible: Faille de Sécurité - Archives Sequid</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body id="sequid-archives-page">
+  <div class="container">
+    <header>
+      <h1 class="app-title">Invincible: Faille de Sécurité</h1>
+    </header>
+    <main>
+      <div class="page-content">
+        <h2 class="page-title">Archives de l'Invasion Sequid</h2>
+        <img
+          src="img/sequid.png"
+          alt="Menace Sequid"
+          class="page-image"
+        />
+        <p class="page-description">
+          Les archives de la GDA sur l'invasion Sequid. La plupart des rapports sont publics, mais les informations les plus cruciales sont classifiées.
+          Seul un accès direct à l'ID de rapport correct révélera la vérité sur leur faiblesse.
+        </p>
+
+        <div class="file-list">
+          <h4>Rapports Publics Disponibles :</h4>
+          <ul>
+            <li><code>rapport_incident_mars_001</code></li>
+            <li><code>analyse_comportement_rus_003</code></li>
+            <li><code>impact_economique_invasion_preliminaire</code></li>
+          </ul>
+        </div>
+
+        <form id="archive-form" class="styled-form">
+          <div class="form-group">
+            <label for="archive-id">Entrez l'ID du Rapport Confidentiel</label>
+            <input type="text" id="archive-id" name="archiveId" placeholder="Ex: rapport_analyse_..." required>
+          </div>
+          <p id="error-message" class="error-message"></p>
+          <button type="submit" class="styled-button">Accéder au Rapport</button>
+        </form>
+        <p class="hint">
+          Indice : Le rapport le plus sensible concernerait la nature même de leur... <strong class="text-highlight-yellow">conscience collective</strong>.
+        </p>
+        <p class="small-hint">
+          Les systèmes d'archivage sont parfois vulnérables si l'on peut deviner ou énumérer les identifiants de fichiers non listés.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; <span id="current-year"></span> Formation Sécurité Omni-Corp. Tous droits réservés.</p>
+      <p>Inspiré par l'univers Invincible.</p>
+    </footer>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>

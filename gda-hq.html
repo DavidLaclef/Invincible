@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invincible: Faille de Sécurité - QG GDA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body id="gda-hq-page">
+  <div class="container">
+    <header>
+      <h1 class="app-title">Invincible: Faille de Sécurité</h1>
+    </header>
+    <main>
+      <div class="page-content">
+        <h2 class="page-title">Quartier Général de la GDA</h2>
+        <img
+          src="img/omniman_invisible.png"
+          alt="Quartier Général GDA"
+          class="page-image"
+        />
+        <p class="page-description">
+          Vous êtes dans le cœur du QG de la GDA. Les informations critiques sont protégées.
+          Certaines menaces ne sont pas visibles à l'œil nu. Inspectez attentivement.
+        </p>
+
+        <!-- Élément caché pour la vulnérabilité CSS -->
+        <div id="hidden-path-container" style="position: absolute; left: -9999px; top: -9999px;" aria-hidden="true">
+          <!-- Le chemin sera injecté par JS ou est une constante vérifiée par JS -->
+        </div>
+
+        <form id="path-form" class="styled-form">
+          <div class="form-group">
+            <label for="path-input">Entrez le chemin d'accès secret</label>
+            <input type="text" id="path-input" name="pathInput" placeholder="/chemin-vers-le-secret" required>
+          </div>
+          <p id="error-message" class="error-message"></p>
+          <button type="submit" class="styled-button">Valider Accès</button>
+        </form>
+
+        <button id="emergency-protocol-button" class="styled-button secondary">
+          Activer Protocole d'Urgence Alpha-7
+        </button>
+
+        <p class="small-hint">
+          Indice: Les secrets de Cecil sont souvent consignés, pas seulement dits. Des éléments peuvent être cachés à la vue de tous. Utilisez vos outils d'inspection (F12).
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; <span id="current-year"></span> Formation Sécurité Omni-Corp. Tous droits réservés.</p>
+      <p>Inspiré par l'univers Invincible.</p>
+    </footer>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>

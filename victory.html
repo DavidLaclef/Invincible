@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invincible: Faille de Sécurité - Victoire !</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body id="victory-page">
+  <div class="container">
+    <header>
+      <h1 class="app-title">Invincible: Faille de Sécurité</h1>
+    </header>
+    <main>
+      <div class="page-content">
+        <h2 class="page-title">Félicitations, Agent !</h2>
+        <img
+          src="img/victory.jpeg"
+          alt="Invincible en pose victorieuse"
+          class="page-image"
+        />
+        <p class="page-description">
+          Vous avez navigué à travers les failles de sécurité et prouvé votre valeur. Vous avez démontré une perspicacité digne d'un Viltrumite (ou presque) !
+        </p>
+
+        <div id="vulnerabilities-summary" class="summary-box">
+          <h3 class="summary-title">Récapitulatif des failles découvertes :</h3>
+          <ul id="vulnerabilities-list" class="summary-list">
+            <!-- Les vulnérabilités seront listées ici par JavaScript -->
+          </ul>
+        </div>
+
+        <button id="restart-button" class="styled-button">Recommencer l'entraînement</button>
+        <p class="small-hint">
+          La sécurité est un combat constant. Restez vigilant.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; <span id="current-year"></span> Formation Sécurité Omni-Corp. Tous droits réservés.</p>
+      <p>Inspiré par l'univers Invincible.</p>
+    </footer>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invincible: Faille de Sécurité - Message d'Amber</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body id="amber-message-page">
+  <div class="container">
+    <header>
+      <h1 class="app-title">Invincible: Faille de Sécurité</h1>
+    </header>
+    <main>
+      <div class="page-content">
+        <h2 class="page-title">Message d'Amber</h2>
+        <img
+          src="img/amber.jpg"
+          alt="Portrait d'Amber"
+          class="page-image amber-image"
+        />
+        <div class="message-box">
+          <p class="message-sender">De: Amber Bennett</p>
+          <p class="message-content">
+            Mark, c'est Amber. Les choses sont... complètement folles ici. J'ai eu si peur.
+            Je me suis cachée dans notre endroit spécial, tu sais, celui où on s'est sentis vraiment... <strong class="text-highlight-yellow">invincibles</strong>... ensemble pour la première fois ?
+            Le mot de passe pour entrer, c'est ce sentiment lui-même. Dépêche-toi, s'il te plaît !
+          </p>
+        </div>
+
+        <form id="amber-form" class="styled-form">
+          <div class="form-group">
+            <label for="social-keyword">Quel est le 'sentiment' ou mot de passe ?</label>
+            <input type="text" id="social-keyword" name="socialKeyword" placeholder="Le mot magique..." required>
+          </div>
+          <p id="error-message" class="error-message"></p>
+          <button type="submit" class="styled-button">Répondre à Amber</button>
+        </form>
+        <p class="small-hint">
+          Parfois, la clé n'est pas technique, mais humaine. Lisez entre les lignes.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; <span id="current-year"></span> Formation Sécurité Omni-Corp. Tous droits réservés.</p>
+      <p>Inspiré par l'univers Invincible.</p>
+    </footer>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>

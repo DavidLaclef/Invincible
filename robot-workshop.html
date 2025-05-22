@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invincible: Faille de Sécurité - Atelier de Robot</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body id="robot-workshop-page">
+  <div class="container">
+    <header>
+      <h1 class="app-title">Invincible: Faille de Sécurité</h1>
+    </header>
+    <main>
+      <div class="page-content">
+        <h2 class="page-title">Atelier Secret de Robot</h2>
+        <img 
+          src="https://picsum.photos/seed/invincible_robot_workshop/400/280" 
+          alt="Atelier de Robot" 
+          class="page-image"
+        />
+        <p class="page-description">
+          L'atelier de Robot. Un dédale de technologie avancée. Ses protocoles de sécurité sont... non conventionnels.
+          Il a laissé une interface de contrôle accessible via la console pour ses "plans de contingence".
+        </p>
+
+        <div class="code-block">
+          <p>Extrait du journal de Robot :</p>
+          <pre>
+// Interface de contrôle des protocoles d'urgence
+// Accessible via l'objet 'robotControle'
+// Méthode : 'activerSequence'
+// Paramètre requis : nom de code du plan
+
+// Exemple d'appel (ne pas utiliser directement !) :
+// robotControle.activerSequence('test_plan_alpha'); 
+          </pre>
+        </div>
+        
+        <p class="hint">
+          Indice : Robot est obsédé par les stratégies et les plans de secours. Un de ses plans les plus importants concernait une "contingence" pour une menace de niveau "Zeta".
+        </p>
+        <p id="error-message" class="error-message"></p>
+        <p class="small-hint">
+          Ouvrez la console du développeur (F12) et interagissez avec l'objet `robotControle`. Le nom de la méthode et le format du paramètre sont cruciaux.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; <span id="current-year"></span> Formation Sécurité Omni-Corp. Tous droits réservés.</p>
+      <p>Inspiré par l'univers Invincible.</p>
+    </footer>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
