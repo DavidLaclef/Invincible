@@ -1,23 +1,24 @@
 // --- CONSTANTS ---
 const APP_TITLE = "Invincible: Faille de Sécurité";
+const FOLDER_NAME = "pages/";
 
 const PAGE_PATHS = {
-  LOGIN: "index.html",
-  GDA_HQ: "gda-hq.html",
-  VILTRUMITE_TERMINAL: "viltrumite-terminal.html",
-  ROBOT_WORKSHOP: "robot-workshop.html", // NOUVEAU
-  AMBER_MESSAGE: "amber-message.html",
-  SEQUID_ARCHIVES: "sequid-archives.html", // NOUVEAU
-  VICTORY: "victory.html"
+  LOGIN: `${FOLDER_NAME}index.html`,
+  GDA_HQ: `${FOLDER_NAME}gda-hq.html`,
+  VILTRUMITE_TERMINAL: `${FOLDER_NAME}viltrumite-terminal.html`,
+  ROBOT_WORKSHOP: `${FOLDER_NAME}robot-workshop.html`,
+  AMBER_MESSAGE: `${FOLDER_NAME}amber-message.html`,
+  SEQUID_ARCHIVES: `${FOLDER_NAME}sequid-archives.html`,
+  VICTORY: `${FOLDER_NAME}victory.html`
 };
 
 const ERROR_MESSAGES = {
   LOGIN_FAILED: "Accès refusé. Vos identifiants sont aussi faibles qu'une vie humaine.",
   GDA_PATH_INCORRECT: "Ce chemin ne mène nulle part. Seuls les agents autorisés connaissent les vraies issues.",
   TERMINAL_ACCESS_DENIED: "Systèmes Viltrumites rejettent votre tentative pathétique. Seuls les forts (ou les évidents) peuvent passer.",
-  ROBOT_ACCESS_DENIED: "Séquence de Robot incorrecte. Ses protocoles sont plus complexes que ça.", // NOUVEAU
+  ROBOT_ACCESS_DENIED: "Séquence de Robot incorrecte. Ses protocoles sont plus complexes que ça.",
   SOCIAL_ENGINEERING_FAIL: "Amber ne vous ferait pas confiance avec cette réponse. Essayez de penser comme Mark pour une fois.",
-  SEQUID_ARCHIVE_NOT_FOUND: "ID de rapport inconnu. Les secrets des Sequids restent cachés.", // NOUVEAU
+  SEQUID_ARCHIVE_NOT_FOUND: "ID de rapport inconnu. Les secrets des Sequids restent cachés.",
   GENERIC_INPUT_ERROR: "Entrée invalide. Même Allen l'Extraterrestre ferait mieux."
 };
 
@@ -26,14 +27,14 @@ const VulnerabilityType = {
   CSS_HIDDEN: "Information sensible (chemin URL) cachée via CSS",
   CONSOLE_LOG_HINT: "Indice pour mot de passe révélé via console.log",
   WEAK_PASSWORD: "Mot de passe faible sur système 'sécurisé'",
-  JS_OBFUSCATION_CALL: "Exécution d'une fonction JavaScript spécifique via la console", // NOUVEAU
+  JS_OBFUSCATION_CALL: "Exécution d'une fonction JavaScript spécifique via la console",
   SOCIAL_ENGINEERING: "Manipulation via message pour obtenir un mot-clé",
-  IDOR_SIMULATION: "Accès à une ressource par devinette/manipulation d'ID (IDOR simulé)", // NOUVEAU
+  IDOR_SIMULATION: "Accès à une ressource par devinette/manipulation d'ID (IDOR simulé)",
 };
 
 const HIDDEN_GDA_PATH = "/terminal-viltrumite";
-const ROBOT_CONTINGENCY_CODE = "plan_contingence_zeta"; // NOUVEAU
-const CORRECT_SEQUID_REPORT_ID = "rapport_conscience_collective_sequid"; // NOUVEAU
+const ROBOT_CONTINGENCY_CODE = "plan_contingence_zeta";
+const CORRECT_SEQUID_REPORT_ID = "rapport_conscience_collective_sequid";
 
 
 // --- LOCALSTORAGE HELPER FUNCTIONS ---
@@ -162,7 +163,7 @@ function initGdaHqPage() {
 function initViltrumiteTerminalPage() {
   console.log("Terminal Viltrumite en ligne. Attente d'authentification. Seuls les Viltrumites purs peuvent accéder.");
   const terminalForm = document.getElementById('terminal-form');
-  const correctPassword = "force"; 
+  const correctPassword = "force";
 
   if (terminalForm) {
     terminalForm.addEventListener('submit', function(event) {
@@ -256,7 +257,7 @@ function initAmberMessagePage() {
 function initSequidArchivesPage() {
   console.log("Archives Sequid: Accès à la base de données. Recherche de rapport en cours.");
   const archiveForm = document.getElementById('archive-form');
-  
+
   if (archiveForm) {
     archiveForm.addEventListener('submit', function(event) {
       event.preventDefault();
@@ -334,11 +335,11 @@ document.addEventListener('DOMContentLoaded', () => {
     initGdaHqPage();
   } else if (bodyId === 'viltrumite-terminal-page') {
     initViltrumiteTerminalPage();
-  } else if (bodyId === 'robot-workshop-page') { // NOUVEAU
+  } else if (bodyId === 'robot-workshop-page') {
     initRobotWorkshopPage();
   } else if (bodyId === 'amber-message-page') {
     initAmberMessagePage();
-  } else if (bodyId === 'sequid-archives-page') { // NOUVEAU
+  } else if (bodyId === 'sequid-archives-page') {
     initSequidArchivesPage();
   } else if (bodyId === 'victory-page') {
     initVictoryPage();
